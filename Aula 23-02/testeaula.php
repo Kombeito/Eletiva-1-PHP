@@ -10,10 +10,10 @@
     <div class="container py-3">
     <h1>bananinha</h1>
     <h3>data de hoje:<?php echo date("d/m/y"); ?></h3>
-    <form method="post" action="resposta.php">
+    <form method="post" action="testeaula.php">
     <div class="mb-3">
                 <label for="Issobanana" class="form-label">banana</label>
-                <input type="text" id="Issobanana" name="Issobanana" class="form-control" required="">
+                <input type="text" id="nome" name="nome" class="form-control" required="">
                 </div><div class="mb-3">
                 <label for="data" class="form-label">data</label>
                 <input type="date" id="data" name="data" class="form-control">
@@ -23,6 +23,14 @@
                 </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
+    <?php
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+        $nome = $_POST['nome'];
+        $senha = $_POST['senha'];
+        echo "<p> seja bem vindo $nome </p>";
+        echo "<p>sua senha é $senha</p>";
+    }
+    ?>
     </div>
 </body>
 </html>
