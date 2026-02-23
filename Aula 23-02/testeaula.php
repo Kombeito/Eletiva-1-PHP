@@ -9,7 +9,8 @@
 <body>
     <div class="container py-3">
     <h1>bananinha</h1>
-    <form method="post">
+    <h3>data de hoje:<?php echo date("d/m/y"); ?></h3>
+    <form method="post" action="resposta.php">
     <div class="mb-3">
                 <label for="Issobanana" class="form-label">banana</label>
                 <input type="text" id="Issobanana" name="Issobanana" class="form-control" required="">
