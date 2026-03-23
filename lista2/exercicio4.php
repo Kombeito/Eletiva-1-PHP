@@ -25,7 +25,7 @@
     $numero1 = $_POST['num1'];
     $numero2 = $_POST['num2'];
     $divisao = $numero1 / $numero2;
-    echo "<p> o valor da soma dos valores inseridos é: $subtracao </p>";
+    echo "<p> o valor da divisão dos valores inseridos é: $divisao </p>";
     }
     ?>
 

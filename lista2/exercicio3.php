@@ -25,7 +25,7 @@
     $numero1 = $_POST['num1'];
     $numero2 = $_POST['num2'];
     $multiplicacao = $numero1 * $numero2;
-    echo "<p> o valor da soma dos valores inseridos é: $subtracao </p>";
+    echo "<p> o valor da multiplicação dos valores inseridos é: $multiplicacao </p>";
     }
     ?>
 
