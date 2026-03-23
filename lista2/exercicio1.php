@@ -11,11 +11,11 @@
 <h1>Lista 1 - exercício 1</h1>
 <form method="post">
 <div class="mb-3">
-              <label for="num1" class="form-label">Digite um número:</label>
+              <label for="num1" class="form-label">Digite um número :</label>
               <input type="number" id="num1" name="num1" class="form-control" required="">
             </div>
 <div class="mb-3">
-              <label for="num2" class="form-label">Digite mais um número:</label>
+              <label for="num2" class="form-label">Digite mais um número :</label>
               <input type="number" id="num2" name="num2" class="form-control" required="">
             </div>
 <button type="submit" class="btn btn-primary">Enviar</button>
