@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Exercício 10 - Lista 1</title>
+<title>Exercício 11 - Lista 1</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" >
 </head>
 <body>
 <div class="container">
-<h1>Lista 1 - exercício 10</h1>
+<h1>Lista 1 - exercício 11</h1>
 <form method="post">
 <div class="mb-3">
               <label for="raio" class="form-label">digite o Raio do círculo em metros:</label>
-              <input type="number" id="raio" name="raio" class="form-control" required="">
+              <input type="number" id="raio" step="0.01" name="raio" class="form-control" required="">
             </div>
 <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
@@ -20,11 +20,11 @@
     if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $raio = $_POST['raio'];
     define ("pi", 3.1415926536);
-    $area = pi * pow($raio, 2);
+    $area = (2 * pi) * $raio;
 
     $resultado_formatado = number_format($area, 2, ',');
 
-    echo "<p>a Área do circulo  é: $resultado_formatado m²</p>";
+    echo "<p>O perimetro do circulo  é: $resultado_formatado m²</p>";
     }
     ?>
 
