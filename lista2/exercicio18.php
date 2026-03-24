@@ -29,9 +29,9 @@
     $valor = $_POST['valor'];
     $juros = $_POST['juros'];
     $periodo = $_POST['periodo'];
-    $jurossimples = $valor * ($juros / 100) * $periodo;
-    $resultado_formatado = number_format($jurossimples, 2, ',', '.');
-    echo "<p>Após o valor passar por juros simples em um período determinado o total é: R$$resultado_formatado</p>";
+    $juroscompostos = $valor * (1+ ($juros / 100)) ** $periodo;
+    $resultado_formatado = number_format($juroscompostos, 2, ',', '.');
+    echo "<p>Após o valor passar por juros compostos em um período determinado o total é: R$$resultado_formatado</p>";
     }
     ?>
 
