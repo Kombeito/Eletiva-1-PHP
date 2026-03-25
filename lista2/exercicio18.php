@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="container">
-<h1>Lista 1 - exercício 17</h1>
+<h1>Lista 1 - Exercício 17</h1>
 <form method="post">
 <div class="mb-3">
               <label for="valor" class="form-label">Digite o valor do produto:</label>
@@ -27,7 +27,7 @@
 <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $valor = $_POST['valor'];
-    $juros = $_POST['juros'];
+    $juros = $_POST['juros']; 
     $periodo = $_POST['periodo'];
     $juroscompostos = $valor * (1+ ($juros / 100)) ** $periodo;
     $resultado_formatado = number_format($juroscompostos, 2, ',', '.');
