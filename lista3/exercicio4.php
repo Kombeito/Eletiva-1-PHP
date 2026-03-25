@@ -8,7 +8,7 @@
 </head>
 <body> 
 <div class="container">
-<h1>Lista 2 - Exercicio 4</h1>
+<h1>Lista 2 - Exercício 4</h1>
 <form method="post">
   <div class="mb-3">
     <label for="num1" class="form-label">Digite um número:</label>

@@ -8,7 +8,7 @@
 </head>
 <body> 
 <div class="container">
-<h1>Lista 2 - Exercicio 1</h1>
+<h1>Lista 2 - Exercício 1</h1>
 <form method="post">
 <?php
 
