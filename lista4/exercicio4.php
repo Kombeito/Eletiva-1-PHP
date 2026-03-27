@@ -12,15 +12,15 @@
 <form method="post">
 <div class="mb-3">
     <label for="dia" class="form-label">Digite o dia:</label>
-    <input type="text" id="dia" name="dia" class="form-control" required>
+    <input type="number" id="dia" name="dia" class="form-control" required>
 </div>
 <div class="mb-3">
     <label for="mes" class="form-label">Digite o mês:</label>
-    <input type="text" id="mes" name="mes" class="form-control" required>
+    <input type="number" id="mes" name="mes" class="form-control" required>
 </div>
 <div class="mb-3">
     <label for="ano" class="form-label">Digite o ano:</label>
-    <input type="text" id="ano" name="ano" class="form-control" required>
+    <input type="number" id="ano" name="ano" class="form-control" required>
 </div>
 
 <?php
