@@ -1,6 +1,6 @@
 <?php require_once('cabecalho.php'); ?>
 
-<h2>Clientes</h2>
+<h2>Clientes:</h2>
 <a href="novo_cliente.php" class="btn btn-success mb-3">Novo Registro</a>
 
 <table class="table table-hover table-striped">
