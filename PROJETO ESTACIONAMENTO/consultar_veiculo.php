@@ -16,7 +16,7 @@
   }
 ?>
 
-<h1>Consultar Veículo</h1>
+<h1>Consultar Veículos</h1>
 <p><strong>ID:</strong> <?= $veiculo['id'] ?></p>
 <p><strong>Placa:</strong> <?= $veiculo['placa'] ?></p>
 <p><strong>Modelo:</strong> <?= $veiculo['modelo'] ?></p>

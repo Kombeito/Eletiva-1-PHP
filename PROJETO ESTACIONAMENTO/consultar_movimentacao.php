@@ -19,7 +19,7 @@
   }
 ?>
 
-<h1>Consultar Movimento</h1>
+<h1>Consultar Movimentos</h1>
 <p><strong>ID:</strong> <?= $mov['id'] ?></p>
 <p><strong>Cliente:</strong> <?= nomeCliente($mov['cliente_id']) ?></p>
 <p><strong>Veículo:</strong> <?= placaVeiculo($mov['veiculo_id']) ?></p>
