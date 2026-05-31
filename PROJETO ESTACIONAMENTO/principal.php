@@ -8,7 +8,7 @@
 ?>
 
 <h2>Seja bem-vindo, <?= $_SESSION['nome'] ?></h2>
-<p>Este sistema controla o cadastro de clientes, veículos, vagas e o registro de entrada e saída dos veículos.</p>
+<p>O meu sistema controla o cadastro de clientes, veículos, vagas e o registro de entrada e saída dos veículos.</p>
 
 <div class="row mt-4">
   <div class="col-md-3 mb-3">
