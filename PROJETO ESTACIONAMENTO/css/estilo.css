@@ -1,0 +1,231 @@
+:root{
+    --cor-preta:#050505;
+    --cor-cinza:#1b1b1f;
+    --cor-cinza-claro:#b9b9b9;
+    --cor-laranja:#ff7a00;
+    --cor-laranja-claro:#ff9d33;
+    --fundo-site:url('../img/fundo-gamer.png');
+    --sombra-laranja:rgba(255,122,0,.22);
+}
+
+
+*{
+    box-sizing:border-box;
+}
+
+body, body.bg-light{
+    min-height:100vh;
+    background-color:var(--cor-preta) !important;
+    background-image:linear-gradient(rgba(0,0,0,.78), rgba(0,0,0,.86)), var(--fundo-site);
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:#f5f5f5;
+}
+
+.navbar{
+    background:rgba(10,10,12,.96) !important;
+    border-bottom:2px solid var(--cor-laranja);
+    box-shadow:0 0 22px var(--sombra-laranja);
+}
+
+.navbar-brand{
+    color:var(--cor-laranja) !important;
+    font-weight:700;
+    letter-spacing:.5px;
+    text-transform:uppercase;
+}
+
+.nav-link{
+    color:#eeeeee !important;
+}
+
+.nav-link:hover,
+.dropdown-item:hover{
+    color:var(--cor-laranja) !important;
+}
+
+.dropdown-menu{
+    background:#111114;
+    border:1px solid rgba(255,122,0,.45);
+}
+
+.dropdown-item{
+    color:#eeeeee;
+}
+
+.container.py-3{
+    margin-top:25px;
+    margin-bottom:25px;
+    padding:28px !important;
+    border-radius:18px;
+    background:rgba(15,15,18,.88);
+    border:1px solid rgba(255,122,0,.28);
+    box-shadow:0 0 30px rgba(0,0,0,.65);
+    backdrop-filter:blur(4px);
+}
+
+h1,h2,h3,h4,h5{
+    color:#ffffff;
+}
+
+h1,h2{
+    border-left:5px solid var(--cor-laranja);
+    padding-left:12px;
+    margin-bottom:18px;
+}
+
+p,.text-muted{
+    color:var(--cor-cinza-claro) !important;
+}
+
+.card{
+    background:linear-gradient(145deg, rgba(36,36,42,.96), rgba(12,12,14,.96));
+    border:1px solid rgba(255,122,0,.36);
+    color:#ffffff;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.45);
+}
+
+.card h2{
+    border:0;
+    padding-left:0;
+    color:var(--cor-laranja);
+    font-weight:800;
+}
+
+.card h5{
+    color:#d9d9d9;
+}
+
+.form-label{
+    color:#eeeeee;
+    font-weight:600;
+}
+
+.form-control,
+.form-select{
+    background:#101014;
+    color:#ffffff;
+    border:1px solid #444;
+    border-radius:12px;
+}
+
+.form-control:focus,
+.form-select:focus{
+    background:#141419;
+    color:#ffffff;
+    border-color:var(--cor-laranja);
+    box-shadow:0 0 0 .25rem rgba(255,122,0,.18);
+}
+
+.form-control::placeholder{
+    color:#858585;
+}
+
+.btn{
+    border-radius:12px;
+    font-weight:600;
+}
+
+.btn-primary,
+.btn-success{
+    background:var(--cor-laranja);
+    border-color:var(--cor-laranja);
+    color:#111111;
+}
+
+.btn-primary:hover,
+.btn-success:hover{
+    background:var(--cor-laranja-claro);
+    border-color:var(--cor-laranja-claro);
+    color:#000000;
+}
+
+.btn-warning{
+    background:#ffb347;
+    border-color:#ffb347;
+    color:#111111;
+}
+
+.btn-info{
+    background:#6e6e73;
+    border-color:#6e6e73;
+    color:#ffffff;
+}
+
+.btn-secondary{
+    background:#303038;
+    border-color:#4a4a55;
+}
+
+.table{
+    --bs-table-bg:rgba(18,18,22,.94);
+    --bs-table-color:#eeeeee;
+    --bs-table-striped-bg:rgba(255,255,255,.04);
+    --bs-table-striped-color:#ffffff;
+    --bs-table-hover-bg:rgba(255,122,0,.14);
+    --bs-table-hover-color:#ffffff;
+    border:1px solid rgba(255,122,0,.25);
+    border-radius:14px;
+    overflow:hidden;
+}
+
+.table thead th{
+    background:#ff7a00;
+    color:#111111;
+    border-color:#ff7a00;
+}
+
+.table td,
+.table th{
+    vertical-align:middle;
+    border-color:rgba(255,255,255,.12);
+}
+
+.alert,
+.list-group-item{
+    background:#15151a;
+    color:#f3f3f3;
+    border-color:rgba(255,122,0,.25);
+}
+
+.login-area{
+    min-height:100vh;
+}
+
+.login-card{
+    background:rgba(15,15,18,.94);
+    border:1px solid rgba(255,122,0,.42);
+    box-shadow:0 0 35px rgba(255,122,0,.14), 0 20px 45px rgba(0,0,0,.75);
+}
+
+.login-card h3{
+    color:var(--cor-laranja);
+    font-weight:800;
+}
+
+.badge-gamer{
+    display:inline-block;
+    padding:6px 12px;
+    border-radius:999px;
+    background:rgba(255,122,0,.16);
+    border:1px solid rgba(255,122,0,.45);
+    color:#ffb56d;
+    font-size:.9rem;
+}
+
+hr{
+    border-color:rgba(255,122,0,.25);
+}
+
+@media(max-width:768px){
+    .container.py-3{
+        margin:12px;
+        padding:18px !important;
+    }
+
+    .table{
+        font-size:.9rem;
+    }
+}
